@@ -67,7 +67,7 @@ h2 {
 
 .welcome::before {
     content: "";
-    background-image: url(/assets/images/lanterns.jpeg);
+    background-image: url(../assets/images/lanterns.jpeg);
     background-size: cover;
     background-position: center;
     position: absolute;
