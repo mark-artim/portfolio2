@@ -28,7 +28,7 @@ h1 span {
     color: var(--red);
     display: block;
     font-size: 5.5rem;
-    letter-spacing: .3em;
+    letter-spacing: .2em;
     }
 
 .welcome h1::before,
@@ -52,7 +52,7 @@ h2 {
     font-family: 'Six Caps', sans-serif;
     color: var(--dark);
     display: block;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: .3em;
     }
 
@@ -146,34 +146,40 @@ h2 {
 .portfolio {
     text-align: center;
     background-color: lightgrey;
-    padding: 5em;
+    padding: 1em;
+    padding-bottom: 2em;
 }
 .portfolio-item {
     position: relative;
     overflow: hidden;
-}
+    }
 img {
     display: block;
-}
+    }
 .portfolio-item figcaption {
     position: absolute;
-    top: 0px;
+    top: 100%;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    padding: 2em;
+    padding: 1.3em;
     background: rgba(255,0,0,.75);
     color: white;
     text-align: left;
     display: flex;
     flex-direction: column;
+    transition: top ease-in-out 250ms;
+    }
+.portfolio-item:hover figcaption,
+.portfolio-item:focus figcaption {
+    top: 0px;
     }
 
 .portfolio-title {
     color:white;
-    font-size: 3.625rem;
+    font-size: 2.5rem;
     margin-bottom: auto;
-}
+    }
 .portfolio-link {
     color: white;
     font-weight: 700;
