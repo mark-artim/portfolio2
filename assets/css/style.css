@@ -1,0 +1,140 @@
+:root {
+    --red: #FF0000;
+    --green: #ADC698;
+    --blue: #114B5F;
+    --purple: #42033D;
+    --dark: #1A090D;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark);
+    background-color: whitesmoke;
+    /* font-family: 'Six Caps', sans-serif; */
+    }
+h1, h2, p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+
+h1 {
+    color: var(--green);
+    font-size: 4rem;
+}
+
+h1 span {
+    font-family: 'Six Caps', sans-serif;
+    color: var(--red);
+    display: block;
+    font-size: 5.5rem;
+    letter-spacing: .3em;
+    }
+
+.welcome h1::before,
+.welcome h1::after {
+    content: "";
+    display: block;
+    margin:auto;
+    width: 60%;
+    height: 1px;
+    background-color: #1A090D;
+    
+}
+h1::before {
+    margin: 0 auto 2em;
+}
+h1::after {
+    margin: 2em auto 0;
+}
+
+h2 {
+    font-family: 'Six Caps', sans-serif;
+    color: var(--dark);
+    display: block;
+    font-size: 3rem;
+    letter-spacing: .3em;
+    }
+
+.welcome {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+.welcome::before {
+    content: "";
+    background-image: url(/assets/images/lanterns.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .3;
+    }
+
+.welcome h1 {
+    font-size: 2.0rem;
+    font-weight: 400;
+}
+
+.intro {
+    display:grid;
+    grid-template-columns: minmax(4em,1fr) minmax(auto, 30em) minmax(4em,1fr);
+    color: white;
+}
+.intro h2 {
+    color: white;
+}
+.intro h2::after {
+    content: "";
+    width: 60%;
+    height: 1px;
+    background: white;
+    display: block;
+    margin: 1em auto 0;
+}
+.intro-middle {
+    background: #1A090D;
+    padding: 2.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro-left img,
+.intro-right img {
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: [port-start] minmax(6em,1fr) [name-start] minmax(6em,1fr) [img-end] 2fr [port-end];
+}
+.about-img {
+    max-width: 80%;
+    grid-column: port-start / img-end;
+    grid-row: 1 / 2;
+}
+.about-title {
+    grid-column: name / port;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+}
+.about-subtitle,
+.about-text {
+    grid-column: port / port;
+}
+.about-subtitle {
+    margin: .5em 0;
+}
+.portfolio-item img {
+    width: 100vw;
+}
