@@ -29,7 +29,7 @@ This is the site on a pc/laptop screen:
 ![Live Site Screenshot](/assets/images/MarkArtim.mp4)
 
 Here is the mobile look and feel:
-![Live Site Screenshot](/assets/images/ScreenshotMobile.jpeg)
+![Live Site Screenshot](/assets/images/ScreenshotMobile.jpg)
 
 More mobile...
 ![Live Site Screenshot](/assets/images/mobile_screenshot2.jpeg)
