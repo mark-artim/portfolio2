@@ -26,7 +26,7 @@ The site can be reached at [Mark's Porfolio](https://mark-artim.github.io/portfo
 The current website looks like this:
 
 This is the site on a pc/laptop screen:
-![Live Site Screenshot](https://drive.google.com/file/d/1fRTuKb64ElMt0fCaeGuTZVZHTAIq9dEt/view)
+![Live Site Screenshot](/assets/images/MarkArtim.mp4)
 
 Here is the mobile look and feel:
 ![Live Site Screenshot](/assets/images/mobile_screenshot1.jpeg)
